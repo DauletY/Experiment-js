@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicle controller</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            margin: 50px auto;
+            position: relative;
+            background-color: darkgreen;
+            width: 500px;
+            height: 500px;
+            border-radius: 5px;
+        }
+        
+        .cicle {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 60px;
+            height: 60px;
+            background-color: greenyellow;
+            border-radius: 30px;
+        }
+        
+        .emoji {
+            width: 15px;
+            height: 15px;
+            right: 90px;
+            background-color: white;
+            border-radius: 7px;
+        }
+        
+        .emoji1 {
+            width: 15px;
+            height: 15px;
+            left: 90px;
+            background-color: white;
+            border-radius: 7px;
+        }
+        
+        .btn_ctrl {
+            margin: 0 auto;
+            width: 30%;
+            height: 60%;
+            display: flex;
+            background-color: darkgreen;
+            justify-content: first baseline;
+            border: 8px solid #313131;
+        }
+        
+        .btn_ctrl button {
+            margin: 6px;
+            width: 75px;
+            height: 20px;
+            display: flexbox;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content" class="container">
+        <div id="cicle" class="cicle">
+            <div class=emoji>+ </div>
+            <div class=emoji1>+ </div>
+
+        </div>
+    </div>
+
+    <div class="btn_ctrl ">
+        <button id="leftid" onclick="left() "> LEFT </button>
+        <button id="upid " onclick="up() "> UP </button>
+        <button id="rightid " onclick="right() "> RIGHT </button>
+        <button id="downid " onclick="down() "> DOWN </button>
+    </div>
+    < <script src="box.js ">
+        </script>
+
+</body>
+
+</html>
